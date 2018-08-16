@@ -35,6 +35,8 @@ void LinkedList<T, K>::insert(const T &newKey, const K &newValue)
 template <typename T, typename K>
 void LinkedList<T, K>::insertFromIndex(int index, const T &newKey, const K &newValue)
 {
+    if (index < 0 || index > count_) return;
+    
     LinkedNode *prev = nullptr;
     LinkedNode *current = head_.get();
     
@@ -48,12 +50,12 @@ void LinkedList<T, K>::insertFromIndex(int index, const T &newKey, const K &newV
     
     if (prev == nullptr)
     {
-        (*nodeToInsert)->_link = std::move(head_);
+        nodeToInsert->link_ = std::move(head_);
         head_ = std::move(nodeToInsert);
     }
     else
     {
-        nodeToInsert._link = std::move(prev->link_);
+        nodeToInsert->link_ = std::move(prev->link_);
         prev->link_ = std::move(nodeToInsert);
     }
     
@@ -94,7 +96,7 @@ bool LinkedList<T, K>::remove(const T &key, K &outValue)
 }
 
 template <typename T, typename K>
-bool LinkedList<T, K>::removeIndex(int index, T &outKey, K &outValue)
+bool LinkedList<T, K>::removeFromIndex(int index, T &outKey, K &outValue)
 {
     if (index < 0 || index > getCount() - 1)
     {

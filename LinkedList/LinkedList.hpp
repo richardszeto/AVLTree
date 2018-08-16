@@ -35,7 +35,7 @@ public:
     void insert(const T &newKey, const K &newValue);
     void insertFromIndex(int index, const T &newKey, const K &newValue);
     bool remove(const T &key, K &outValue);
-    bool removeIndex(int index, T &outKey, K &outValue);
+    bool removeFromIndex(int index, T &outKey, K &outValue);
     bool find(const T &key, K &outValue) const;
     bool findFromIndex(int index, T &outKey, K &outValue) const;
     const int getCount() const;

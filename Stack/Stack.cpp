@@ -31,7 +31,7 @@ T Stack<T>::pop()
     T outKey;
     T outValue;
     
-    linkedList.removeIndex(getCount() - 1, outKey, outValue);
+    linkedList.removeFromIndex(getCount() - 1, outKey, outValue);
     
     return outKey;
 }

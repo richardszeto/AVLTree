@@ -31,7 +31,7 @@ T Queue<T>::dequeue()
     T outKey;
     T outValue;
     
-    linkedList.removeIndex(0, outKey, outValue);
+    linkedList.removeFromIndex(0, outKey, outValue);
     
     return outKey;
 }
