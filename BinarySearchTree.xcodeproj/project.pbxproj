@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0D5BBD21268D7100E7D13F /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0D5BBC21268D7100E7D13F /* gtest.framework */; };
 		3BA5D36D20E490B900102C14 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D36C20E490B900102C14 /* main.cpp */; };
 		3BA5D37B20E4A58A00102C14 /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D37920E4A58A00102C14 /* LinkedList.cpp */; };
 		3BA5D37E20E4B6FF00102C14 /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D37C20E4B6FF00102C14 /* Stack.cpp */; };
 		3BA5D38120E4BA8C00102C14 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D37F20E4BA8C00102C14 /* Queue.cpp */; };
 		3BA5D38420E4E30400102C14 /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D38220E4E30400102C14 /* BinarySearchTree.cpp */; };
-		3BB818C22126662F006BAA13 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEE69F62125226000E72981 /* gtest.framework */; };
 		3BEE69F5212520C800E72981 /* LinkedListUnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE69F3212520C800E72981 /* LinkedListUnitTest.cpp */; };
 		3BEE69FA2125438400E72981 /* StackUnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE69F82125438400E72981 /* StackUnitTest.cpp */; };
 		3BEE69FD21254BE400E72981 /* QueueUnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE69FB21254BE400E72981 /* QueueUnitTest.cpp */; };
@@ -32,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B0D5BBC21268D7100E7D13F /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = googletest/gtest.framework; sourceTree = "<group>"; };
 		3BA5D36920E490B900102C14 /* BinarySearchTree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BinarySearchTree; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA5D36C20E490B900102C14 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3BA5D37920E4A58A00102C14 /* LinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
@@ -44,7 +45,6 @@
 		3BA5D38320E4E30400102C14 /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
 		3BEE69F3212520C800E72981 /* LinkedListUnitTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListUnitTest.cpp; sourceTree = "<group>"; };
 		3BEE69F4212520C800E72981 /* LinkedListUnitTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListUnitTest.hpp; sourceTree = "<group>"; };
-		3BEE69F62125226000E72981 /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = ../../../../../Library/Frameworks/gtest.framework; sourceTree = "<group>"; };
 		3BEE69F82125438400E72981 /* StackUnitTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StackUnitTest.cpp; sourceTree = "<group>"; };
 		3BEE69F92125438400E72981 /* StackUnitTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StackUnitTest.hpp; sourceTree = "<group>"; };
 		3BEE69FB21254BE400E72981 /* QueueUnitTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QueueUnitTest.cpp; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BB818C22126662F006BAA13 /* gtest.framework in Frameworks */,
+				3B0D5BBD21268D7100E7D13F /* gtest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +133,7 @@
 		3BEE69EF21251C8300E72981 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3BEE69F62125226000E72981 /* gtest.framework */,
+				3B0D5BBC21268D7100E7D13F /* gtest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -324,7 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)/googletest",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -336,7 +336,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)/googletest",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
