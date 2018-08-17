@@ -12,6 +12,6 @@
 #include "gtest/gtest.h"
 
 // LinkedList is a template, so implementation needs to be included
-#include "LinkedList.cpp"
+#include "../../LinkedList/LinkedList.cpp"
 
 #endif /* test_hpp */

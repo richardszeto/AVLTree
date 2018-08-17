@@ -7,19 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B0D5BBD21268D7100E7D13F /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0D5BBC21268D7100E7D13F /* gtest.framework */; };
+		3B0D5BC72126905E00E7D13F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B0D5BC62126905E00E7D13F /* main.cpp */; };
+		3B0D5BCB2126909300E7D13F /* BinarySearchTreeUnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE69FE21254E8000E72981 /* BinarySearchTreeUnitTest.cpp */; };
+		3B0D5BCC2126909900E7D13F /* LinkedListUnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE69F3212520C800E72981 /* LinkedListUnitTest.cpp */; };
+		3B0D5BCD2126909E00E7D13F /* QueueUnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE69FB21254BE400E72981 /* QueueUnitTest.cpp */; };
+		3B0D5BCE212690A400E7D13F /* StackUnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE69F82125438400E72981 /* StackUnitTest.cpp */; };
+		3B0D5BD32126920B00E7D13F /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0D5BBC21268D7100E7D13F /* gtest.framework */; };
 		3BA5D36D20E490B900102C14 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D36C20E490B900102C14 /* main.cpp */; };
 		3BA5D37B20E4A58A00102C14 /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D37920E4A58A00102C14 /* LinkedList.cpp */; };
 		3BA5D37E20E4B6FF00102C14 /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D37C20E4B6FF00102C14 /* Stack.cpp */; };
 		3BA5D38120E4BA8C00102C14 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D37F20E4BA8C00102C14 /* Queue.cpp */; };
 		3BA5D38420E4E30400102C14 /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D38220E4E30400102C14 /* BinarySearchTree.cpp */; };
-		3BEE69F5212520C800E72981 /* LinkedListUnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE69F3212520C800E72981 /* LinkedListUnitTest.cpp */; };
-		3BEE69FA2125438400E72981 /* StackUnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE69F82125438400E72981 /* StackUnitTest.cpp */; };
-		3BEE69FD21254BE400E72981 /* QueueUnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE69FB21254BE400E72981 /* QueueUnitTest.cpp */; };
-		3BEE6A0021254E8000E72981 /* BinarySearchTreeUnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE69FE21254E8000E72981 /* BinarySearchTreeUnitTest.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		3B0D5BD42126931F00E7D13F /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		3B0D5BC22126905E00E7D13F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		3BA5D36720E490B900102C14 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +55,8 @@
 
 /* Begin PBXFileReference section */
 		3B0D5BBC21268D7100E7D13F /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = googletest/gtest.framework; sourceTree = "<group>"; };
+		3B0D5BC42126905E00E7D13F /* UnitTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0D5BC62126905E00E7D13F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3BA5D36920E490B900102C14 /* BinarySearchTree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BinarySearchTree; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA5D36C20E490B900102C14 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3BA5D37920E4A58A00102C14 /* LinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
@@ -54,22 +78,75 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3B0D5BC12126905E00E7D13F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0D5BD32126920B00E7D13F /* gtest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BA5D36620E490B900102C14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B0D5BBD21268D7100E7D13F /* gtest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B38054720EC120C00F7E733 /* LinkedList */ = {
+		3B0D5BC52126905E00E7D13F /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B0D5BD2212690E200E7D13F /* BinarySearchTreeUnitTest */,
+				3B0D5BD1212690D500E7D13F /* LinkedListUnitTest */,
+				3B0D5BD0212690C200E7D13F /* QueueUnitTest */,
+				3B0D5BCF212690B100E7D13F /* StackUnitTest */,
+				3B0D5BC62126905E00E7D13F /* main.cpp */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		3B0D5BCF212690B100E7D13F /* StackUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE69F82125438400E72981 /* StackUnitTest.cpp */,
+				3BEE69F92125438400E72981 /* StackUnitTest.hpp */,
+			);
+			path = StackUnitTest;
+			sourceTree = "<group>";
+		};
+		3B0D5BD0212690C200E7D13F /* QueueUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE69FB21254BE400E72981 /* QueueUnitTest.cpp */,
+				3BEE69FC21254BE400E72981 /* QueueUnitTest.hpp */,
+			);
+			path = QueueUnitTest;
+			sourceTree = "<group>";
+		};
+		3B0D5BD1212690D500E7D13F /* LinkedListUnitTest */ = {
 			isa = PBXGroup;
 			children = (
 				3BEE69F4212520C800E72981 /* LinkedListUnitTest.hpp */,
 				3BEE69F3212520C800E72981 /* LinkedListUnitTest.cpp */,
+			);
+			path = LinkedListUnitTest;
+			sourceTree = "<group>";
+		};
+		3B0D5BD2212690E200E7D13F /* BinarySearchTreeUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE69FE21254E8000E72981 /* BinarySearchTreeUnitTest.cpp */,
+				3BEE69FF21254E8000E72981 /* BinarySearchTreeUnitTest.hpp */,
+			);
+			path = BinarySearchTreeUnitTest;
+			sourceTree = "<group>";
+		};
+		3B38054720EC120C00F7E733 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
 				3BA5D37920E4A58A00102C14 /* LinkedList.cpp */,
 				3BA5D37A20E4A58A00102C14 /* LinkedList.hpp */,
 			);
@@ -79,8 +156,6 @@
 		3B38054820EC124100F7E733 /* Queue */ = {
 			isa = PBXGroup;
 			children = (
-				3BEE69FB21254BE400E72981 /* QueueUnitTest.cpp */,
-				3BEE69FC21254BE400E72981 /* QueueUnitTest.hpp */,
 				3BA5D37F20E4BA8C00102C14 /* Queue.cpp */,
 				3BA5D38020E4BA8C00102C14 /* Queue.hpp */,
 			);
@@ -90,8 +165,6 @@
 		3B38054920EC125300F7E733 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
-				3BEE69F82125438400E72981 /* StackUnitTest.cpp */,
-				3BEE69F92125438400E72981 /* StackUnitTest.hpp */,
 				3BA5D37C20E4B6FF00102C14 /* Stack.cpp */,
 				3BA5D37D20E4B6FF00102C14 /* Stack.hpp */,
 			);
@@ -106,6 +179,7 @@
 				3B38054820EC124100F7E733 /* Queue */,
 				3B38054720EC120C00F7E733 /* LinkedList */,
 				3BA5D36B20E490B900102C14 /* BinarySearchTree */,
+				3B0D5BC52126905E00E7D13F /* UnitTests */,
 				3BA5D36A20E490B900102C14 /* Products */,
 				3BEE69EF21251C8300E72981 /* Frameworks */,
 			);
@@ -115,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				3BA5D36920E490B900102C14 /* BinarySearchTree */,
+				3B0D5BC42126905E00E7D13F /* UnitTests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,8 +197,6 @@
 		3BA5D36B20E490B900102C14 /* BinarySearchTree */ = {
 			isa = PBXGroup;
 			children = (
-				3BEE69FE21254E8000E72981 /* BinarySearchTreeUnitTest.cpp */,
-				3BEE69FF21254E8000E72981 /* BinarySearchTreeUnitTest.hpp */,
 				3BA5D38220E4E30400102C14 /* BinarySearchTree.cpp */,
 				3BA5D38320E4E30400102C14 /* BinarySearchTree.hpp */,
 			);
@@ -141,6 +214,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3B0D5BC32126905E00E7D13F /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B0D5BCA2126905E00E7D13F /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				3B0D5BC02126905E00E7D13F /* Sources */,
+				3B0D5BC12126905E00E7D13F /* Frameworks */,
+				3B0D5BC22126905E00E7D13F /* CopyFiles */,
+			);
+			buildRules = (
+				3B0D5BD42126931F00E7D13F /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = Sample;
+			productReference = 3B0D5BC42126905E00E7D13F /* UnitTests */;
+			productType = "com.apple.product-type.tool";
+		};
 		3BA5D36820E490B900102C14 /* BinarySearchTree */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BA5D37020E490B900102C14 /* Build configuration list for PBXNativeTarget "BinarySearchTree" */;
@@ -167,6 +258,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Richard Szeto";
 				TargetAttributes = {
+					3B0D5BC32126905E00E7D13F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					3BA5D36820E490B900102C14 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -185,23 +279,32 @@
 			projectRoot = "";
 			targets = (
 				3BA5D36820E490B900102C14 /* BinarySearchTree */,
+				3B0D5BC32126905E00E7D13F /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3B0D5BC02126905E00E7D13F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0D5BCC2126909900E7D13F /* LinkedListUnitTest.cpp in Sources */,
+				3B0D5BCE212690A400E7D13F /* StackUnitTest.cpp in Sources */,
+				3B0D5BCB2126909300E7D13F /* BinarySearchTreeUnitTest.cpp in Sources */,
+				3B0D5BC72126905E00E7D13F /* main.cpp in Sources */,
+				3B0D5BCD2126909E00E7D13F /* QueueUnitTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BA5D36520E490B900102C14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3BA5D37B20E4A58A00102C14 /* LinkedList.cpp in Sources */,
-				3BEE69F5212520C800E72981 /* LinkedListUnitTest.cpp in Sources */,
 				3BA5D37E20E4B6FF00102C14 /* Stack.cpp in Sources */,
-				3BEE69FA2125438400E72981 /* StackUnitTest.cpp in Sources */,
 				3BA5D38120E4BA8C00102C14 /* Queue.cpp in Sources */,
-				3BEE69FD21254BE400E72981 /* QueueUnitTest.cpp in Sources */,
 				3BA5D38420E4E30400102C14 /* BinarySearchTree.cpp in Sources */,
-				3BEE6A0021254E8000E72981 /* BinarySearchTreeUnitTest.cpp in Sources */,
 				3BA5D36D20E490B900102C14 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +312,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		3B0D5BC82126905E00E7D13F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/googletest",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B0D5BC92126905E00E7D13F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/googletest",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		3BA5D36E20E490B900102C14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -322,10 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/googletest",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -334,10 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/googletest",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -345,6 +466,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3B0D5BCA2126905E00E7D13F /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0D5BC82126905E00E7D13F /* Debug */,
+				3B0D5BC92126905E00E7D13F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3BA5D36420E490B900102C14 /* Build configuration list for PBXProject "BinarySearchTree" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

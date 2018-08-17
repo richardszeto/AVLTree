@@ -8,7 +8,6 @@
 
 #include <iostream>
 #include <string>
-#include "gtest/gtest.h"
 
 // BinarySearchTree is a template, so implementation must be included
 #include "./BinarySearchTree/BinarySearchTree.cpp"
@@ -17,9 +16,6 @@ using namespace std;
 
 int main(int argc, const char * argv[])
 {
-    testing::InitGoogleTest(&argc, (char**)argv);
-    int result = RUN_ALL_TESTS();
-    
     BinarySearchTree<int, int> bst;
     
     clock_t insertionStart;
@@ -41,5 +37,5 @@ int main(int argc, const char * argv[])
     cout << "Find 1,000,000th element." << endl;
     cout << "findDuration: " << findDuration << "." << endl;
     
-    return result;
+    return 0;
 }
