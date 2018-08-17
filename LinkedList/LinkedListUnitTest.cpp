@@ -7,8 +7,6 @@
 //
 
 #include "LinkedListUnitTest.hpp"
-#include "LinkedList.cpp"
-#include "gtest/gtest.h"
 
 TEST(LinkedList, Insert) {
     LinkedList<int, int> linkedList;

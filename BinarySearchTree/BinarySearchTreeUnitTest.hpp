@@ -9,6 +9,9 @@
 #ifndef BinarySearchTreeUnitTest_hpp
 #define BinarySearchTreeUnitTest_hpp
 
-#include <stdio.h>
+#include "gtest/gtest.h"
+
+// BinarySearchTree is a template, so implementation needs to be included
+#include "BinarySearchTree.cpp"
 
 #endif /* BinarySearchTreeUnitTest_hpp */

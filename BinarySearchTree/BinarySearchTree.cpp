@@ -6,10 +6,10 @@
 //  Copyright © 2018 Richard Szeto. All rights reserved.
 //
 
-#include "BinarySearchTree.hpp"
+#ifndef BinarySearchTree_cpp
+#define BinarySearchTree_cpp
 
-#include "../Queue/Queue.hpp"
-#include "../Stack/Stack.hpp"
+#include "BinarySearchTree.hpp"
 
 class TreeNode;
 
@@ -1017,3 +1017,5 @@ bool BinarySearchTree<T, K>::isEmpty() const
 {
     return getCount() <= 0;
 }
+
+#endif

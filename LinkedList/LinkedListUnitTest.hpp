@@ -9,6 +9,9 @@
 #ifndef LinkedListUnitTest_hpp
 #define LinkedListUnitTest_hpp
 
-#include <stdio.h>
+#include "gtest/gtest.h"
+
+// LinkedList is a template, so implementation needs to be included
+#include "LinkedList.cpp"
 
 #endif /* test_hpp */

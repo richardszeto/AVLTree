@@ -12,8 +12,8 @@
 		3BA5D37E20E4B6FF00102C14 /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D37C20E4B6FF00102C14 /* Stack.cpp */; };
 		3BA5D38120E4BA8C00102C14 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D37F20E4BA8C00102C14 /* Queue.cpp */; };
 		3BA5D38420E4E30400102C14 /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D38220E4E30400102C14 /* BinarySearchTree.cpp */; };
+		3BB818C22126662F006BAA13 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEE69F62125226000E72981 /* gtest.framework */; };
 		3BEE69F5212520C800E72981 /* LinkedListUnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE69F3212520C800E72981 /* LinkedListUnitTest.cpp */; };
-		3BEE69F72125226000E72981 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEE69F62125226000E72981 /* gtest.framework */; };
 		3BEE69FA2125438400E72981 /* StackUnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE69F82125438400E72981 /* StackUnitTest.cpp */; };
 		3BEE69FD21254BE400E72981 /* QueueUnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE69FB21254BE400E72981 /* QueueUnitTest.cpp */; };
 		3BEE6A0021254E8000E72981 /* BinarySearchTreeUnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE69FE21254E8000E72981 /* BinarySearchTreeUnitTest.cpp */; };
@@ -42,7 +42,6 @@
 		3BA5D38020E4BA8C00102C14 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		3BA5D38220E4E30400102C14 /* BinarySearchTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinarySearchTree.cpp; sourceTree = "<group>"; };
 		3BA5D38320E4E30400102C14 /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
-		3BEE69F021251C8400E72981 /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = googletest/gtest.framework; sourceTree = "<group>"; };
 		3BEE69F3212520C800E72981 /* LinkedListUnitTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListUnitTest.cpp; sourceTree = "<group>"; };
 		3BEE69F4212520C800E72981 /* LinkedListUnitTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListUnitTest.hpp; sourceTree = "<group>"; };
 		3BEE69F62125226000E72981 /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = ../../../../../Library/Frameworks/gtest.framework; sourceTree = "<group>"; };
@@ -59,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BEE69F72125226000E72981 /* gtest.framework in Frameworks */,
+				3BB818C22126662F006BAA13 /* gtest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				3BEE69F62125226000E72981 /* gtest.framework */,
-				3BEE69F021251C8400E72981 /* gtest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,15 +194,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BEE6A0021254E8000E72981 /* BinarySearchTreeUnitTest.cpp in Sources */,
-				3BA5D38420E4E30400102C14 /* BinarySearchTree.cpp in Sources */,
-				3BA5D37E20E4B6FF00102C14 /* Stack.cpp in Sources */,
-				3BA5D36D20E490B900102C14 /* main.cpp in Sources */,
-				3BA5D38120E4BA8C00102C14 /* Queue.cpp in Sources */,
 				3BA5D37B20E4A58A00102C14 /* LinkedList.cpp in Sources */,
-				3BEE69FA2125438400E72981 /* StackUnitTest.cpp in Sources */,
 				3BEE69F5212520C800E72981 /* LinkedListUnitTest.cpp in Sources */,
+				3BA5D37E20E4B6FF00102C14 /* Stack.cpp in Sources */,
+				3BEE69FA2125438400E72981 /* StackUnitTest.cpp in Sources */,
+				3BA5D38120E4BA8C00102C14 /* Queue.cpp in Sources */,
 				3BEE69FD21254BE400E72981 /* QueueUnitTest.cpp in Sources */,
+				3BA5D38420E4E30400102C14 /* BinarySearchTree.cpp in Sources */,
+				3BEE6A0021254E8000E72981 /* BinarySearchTreeUnitTest.cpp in Sources */,
+				3BA5D36D20E490B900102C14 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +324,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/googletest",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -339,7 +336,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/googletest",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";

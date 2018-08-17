@@ -8,17 +8,15 @@
 
 #include <iostream>
 #include <string>
-#include "./BinarySearchTree/BinarySearchTree.cpp"
-#include "./LinkedList/LinkedList.cpp"
-#include "./Queue/Queue.cpp"
-#include "./Stack/Stack.cpp"
 #include "gtest/gtest.h"
+
+// BinarySearchTree is a template, so implementation must be included
+#include "./BinarySearchTree/BinarySearchTree.cpp"
 
 using namespace std;
 
 int main(int argc, const char * argv[])
 {
-    
     testing::InitGoogleTest(&argc, (char**)argv);
     int result = RUN_ALL_TESTS();
     

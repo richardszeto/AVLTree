@@ -9,7 +9,8 @@
 #ifndef Queue_hpp
 #define Queue_hpp
 
-#include "../LinkedList/LinkedList.hpp"
+// LinkedList is a template, so implementation needs to be included
+#include "../LinkedList/LinkedList.cpp"
 
 #include <iostream>
 

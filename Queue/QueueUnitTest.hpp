@@ -9,6 +9,9 @@
 #ifndef QueueUnitTest_hpp
 #define QueueUnitTest_hpp
 
-#include <stdio.h>
+#include "gtest/gtest.h"
+
+// Queue is a template, so implementation needs to be included
+#include "Queue.cpp"
 
 #endif /* QueueUnitTest_hpp */

@@ -6,6 +6,9 @@
 //  Copyright © 2018 Richard Szeto. All rights reserved.
 //
 
+#ifndef Stack_cpp
+#define Stack_cpp
+
 #include "Stack.hpp"
 
 template <typename T>
@@ -47,3 +50,5 @@ bool Stack<T>::isEmpty() const
 {
     return getCount() <= 0;
 }
+
+#endif

@@ -6,6 +6,9 @@
 //  Copyright © 2018 Richard Szeto. All rights reserved.
 //
 
+#ifndef LinkedList_cpp
+#define LinkedList_cpp
+
 #include "LinkedList.hpp"
 
 template <typename T, typename K>
@@ -181,3 +184,5 @@ bool LinkedList<T, K>::isEmpty() const
 {
     return getCount() <= 0;
 }
+
+#endif

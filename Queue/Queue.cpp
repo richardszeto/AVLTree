@@ -6,6 +6,9 @@
 //  Copyright © 2018 Richard Szeto. All rights reserved.
 //
 
+#ifndef Queue_cpp
+#define Queue_cpp
+
 #include "Queue.hpp"
 
 template <typename T>
@@ -47,3 +50,5 @@ bool Queue<T>::isEmpty() const
 {
     return getCount() <= 0;
 }
+
+#endif

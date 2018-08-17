@@ -9,6 +9,9 @@
 #ifndef StackUnitTest_hpp
 #define StackUnitTest_hpp
 
-#include <stdio.h>
+#include "gtest/gtest.h"
+
+// Stack is a template, so implementation needs to be included
+#include "Stack.cpp"
 
 #endif /* StackUnitTest_hpp */

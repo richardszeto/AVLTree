@@ -7,8 +7,6 @@
 //
 
 #include "BinarySearchTreeUnitTest.hpp"
-#include "BinarySearchTree.cpp"
-#include "gtest/gtest.h"
 
 TEST(BinarySearchTree, NoRotationInsert) {
     

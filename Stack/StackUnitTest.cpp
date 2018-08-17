@@ -7,8 +7,6 @@
 //
 
 #include "StackUnitTest.hpp"
-#include "Stack.cpp"
-#include "gtest/gtest.h"
 
 TEST(Stack, Push) {
     Stack<int> stack;

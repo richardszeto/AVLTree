@@ -7,8 +7,6 @@
 //
 
 #include "QueueUnitTest.hpp"
-#include "Queue.cpp"
-#include "gtest/gtest.h"
 
 TEST(Queue, Enqueue) {
     Queue<int> queue;

@@ -9,7 +9,8 @@
 #ifndef Stack_hpp
 #define Stack_hpp
 
-#include "../LinkedList/LinkedList.hpp"
+// LinkedList is a template, so implementation needs to be included
+#include "../LinkedList/LinkedList.cpp"
 
 #include <iostream>
 

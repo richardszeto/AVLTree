@@ -9,6 +9,10 @@
 #ifndef BinarySearchTree_hpp
 #define BinarySearchTree_hpp
 
+// Queue and Stack are templates, so implementation needs to be included
+#include "../Queue/Queue.cpp"
+#include "../Stack/Stack.cpp"
+
 #include <iostream>
 
 template <typename T, typename K>
