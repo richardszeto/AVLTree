@@ -891,36 +891,7 @@ int BinarySearchTree<T, K>::getHeight() const
         return 0;
     }
     
-    int height = 0;
-    
-    Queue<TreeNode*> queue;
-    queue.enqueue(root_.get());
-    
-    do
-    {
-        int queueSize = queue.getCount();
-        
-        while (queueSize > 0)
-        {
-            TreeNode* node = queue.dequeue();
-            
-            if (node->left() != nullptr)
-            {
-                queue.enqueue(node->left());
-            }
-            
-            if (node->right() != nullptr)
-            {
-                queue.enqueue(node->right());
-            }
-            
-            queueSize--;
-        }
-        
-        height++;
-    } while (!queue.isEmpty());
-    
-    return height;
+    return root_->height();
 }
 
 template <typename T, typename K>

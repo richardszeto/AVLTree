@@ -13,6 +13,10 @@
 		3B0D5BCD2126909E00E7D13F /* QueueUnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE69FB21254BE400E72981 /* QueueUnitTest.cpp */; };
 		3B0D5BCE212690A400E7D13F /* StackUnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE69F82125438400E72981 /* StackUnitTest.cpp */; };
 		3B0D5BD32126920B00E7D13F /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0D5BBC21268D7100E7D13F /* gtest.framework */; };
+		3B0D5BF221269C1F00E7D13F /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D37C20E4B6FF00102C14 /* Stack.cpp */; };
+		3B0D5BF321269C1F00E7D13F /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D37F20E4BA8C00102C14 /* Queue.cpp */; };
+		3B0D5BF421269C1F00E7D13F /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D37920E4A58A00102C14 /* LinkedList.cpp */; };
+		3B0D5BF521269C1F00E7D13F /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D38220E4E30400102C14 /* BinarySearchTree.cpp */; };
 		3BA5D36D20E490B900102C14 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D36C20E490B900102C14 /* main.cpp */; };
 		3BA5D37B20E4A58A00102C14 /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D37920E4A58A00102C14 /* LinkedList.cpp */; };
 		3BA5D37E20E4B6FF00102C14 /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D37C20E4B6FF00102C14 /* Stack.cpp */; };
@@ -289,6 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0D5BF221269C1F00E7D13F /* Stack.cpp in Sources */,
+				3B0D5BF321269C1F00E7D13F /* Queue.cpp in Sources */,
+				3B0D5BF421269C1F00E7D13F /* LinkedList.cpp in Sources */,
+				3B0D5BF521269C1F00E7D13F /* BinarySearchTree.cpp in Sources */,
 				3B0D5BCC2126909900E7D13F /* LinkedListUnitTest.cpp in Sources */,
 				3B0D5BCE212690A400E7D13F /* StackUnitTest.cpp in Sources */,
 				3B0D5BCB2126909300E7D13F /* BinarySearchTreeUnitTest.cpp in Sources */,

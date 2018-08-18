@@ -10,6 +10,7 @@
 #define BinarySearchTreeUnitTest_hpp
 
 #include "gtest/gtest.h"
+#include <math.h>
 
 // BinarySearchTree is a template, so implementation needs to be included
 #include "../../BinarySearchTree/BinarySearchTree.cpp"
